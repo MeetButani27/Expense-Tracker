@@ -1,0 +1,45 @@
+.login {
+    /* width: 28%; */
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: rgb(133, 196, 75);
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.login_box {
+    background-color: rgb(190, 251, 199);
+    /* width: 30%; */
+    padding: 45px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.nav-btn {
+    color: white;
+    border: 0.2px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+    .login {width: 75%}
+}
+  
+@media only screen and (min-width: 600px) {
+    .login {width: 65%}
+}
+
+@media only screen and (min-width: 768px) {
+    .login {width: 45%}
+} 
+
+@media only screen and (min-width: 992px) {
+    .login {width: 38%;}
+} 
+
+@media only screen and (min-width: 1200px) {
+    .login {width: 25%;}
+}
+
