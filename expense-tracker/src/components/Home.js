@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import App from '../App';
 import Login from './Login';
 import Signup from './Signup';
+import About from './About';
+import Contact from './Contact';
 import logo from '../budget.png';
 
 
@@ -25,12 +27,12 @@ function Home() {
                                 {/* <a className="nav-link text-white" aria-current="page" href="#">Home</a> */}
                                 <Link className="nav-link mx-3 text-white" to="/app">App</Link>
                             </li>
-                            {/* <li className="nav-item">
-                                <Link className="nav-link mx-3 text-white" to="/login">Login</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link mx-3 text-white" to="/about">About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link mx-3 text-white" to="/signup">Signup</Link>
-                            </li> */}
+                                <Link className="nav-link mx-3 text-white" to="/contact">Contact</Link>
+                            </li>
                         </ul>
 
                         <form className="d-flex" role="search">
@@ -46,6 +48,9 @@ function Home() {
                     <Route exact path="/home" element={ <Home /> } key="home" />
                     <Route exact path="/login" element={ <Login /> } key="login" />
                     <Route exact path="/signup" element={ <Signup /> } key="signup" />
+                    <Route exact path="/about" element={ <About /> } key="about" />
+                    <Route exact path="/contact" element={ <Contact /> } key="contact" />
+
                 </Routes>
             </Router>
         </>
